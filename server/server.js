@@ -15,8 +15,12 @@ server.listen(3001, () => {
 });
 
 io.on('connection', (socket) => {
-  socket.emit('connection', null)
   socket.on('chat message', (message) => {
-    console.log(message)
-  })
+    socket.broadcast.emit('chat message', message);
+  });
+
+  socket.on('user', (name) => {
+    socket.broadcast.emit('new user', name);
+  });
+
 })
