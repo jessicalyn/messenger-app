@@ -20,8 +20,8 @@ export default class Login extends Component {
   render() {
     return (
       <form onSubmit={this.sendLogin}>
-        <input type="text" value={this.state.userName} onChange={this.handleChange} />
-        <input type="submit" value="Send UserName" />
+        <input type="text" value={this.state.userName} onChange={this.handleChange} class="form-input" />
+        <input type="submit" value="Send UserName" class="button"/>
       </form>
     )
   }

@@ -1,10 +1,10 @@
 export default function Conversation(props) {
 
   const conversationHistory = props.chatLog.map((message) => {
-   return <div>{message}</div>})
+    return <div class="message-body">{message}</div>})
 
   return (
-    <div>
+    <div class="conversation-body">
     {conversationHistory}
     </div>
   )

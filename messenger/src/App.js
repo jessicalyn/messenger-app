@@ -57,19 +57,19 @@ export default class App extends Component {
   render() {
     let body
     if (this.state.user === null) {
-      body = <div>
+      body = <div class="containers login-container">
           <h3>Please login to join the chatroom.</h3>
           <Login onUserLogin={this.loginUser} />
         </div>
     } else {
-      body = <div>
+      body = <div class="containers conversation-container">
           <h3>Type a message into the form below to starting chatting with your friends!</h3>
           <Conversation chatLog={this.state.chatLog} />
           <Chatbox onMessageSend={this.sendMessage}/>
         </div>
     }
     return (
-      <div>
+      <div class="containers app-container">
         <h2>A Simple Messaging App</h2>
         {body}
       </div>

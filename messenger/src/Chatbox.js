@@ -20,7 +20,7 @@ export default class Chatbox extends Component {
   render() {
     return (
       <form onSubmit={this.sendMessage}>
-        <input type="text" value={this.state.chatMessage} onChange={this.handleChange} />
+        <input type="text" value={this.state.chatMessage} onChange={this.handleChange} class="chatbox-form form-input"/>
         <input type="submit" value="Send Message" />
       </form>
     )
