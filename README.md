@@ -8,7 +8,7 @@ This is a simple messenger app for multiple people to join and chat in a chatroo
 
 These instructions will get a copy of the project up and running on your local machine for usage and testing purposes. You'll need to run both the React front-end and server separately.
 
-clone the repo: ``` git clone https://github.com/jessicalyn/messenger-app```
+clone the repo: ``` git clone https://github.com/jessicalyn/messenger-app.git```
 
 cd into directory and run npm install: ``` npm install```
 
