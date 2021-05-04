@@ -46,7 +46,7 @@ export default class App extends Component {
   loginUser = (userName) => {
     this.socket.emit('user', userName);
     this.setState({ user: userName });
-    this.updateChatLog('You have joined the chat.');
+    this.updateChatLog(`Welcome ${userName}, you have joined the chat.`);
   }
 
   updateChatLog = (message) => {

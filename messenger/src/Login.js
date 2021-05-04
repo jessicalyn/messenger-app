@@ -21,7 +21,7 @@ export default class Login extends Component {
     return (
       <form onSubmit={this.sendLogin}>
         <input type="text" value={this.state.userName} onChange={this.handleChange} class="form-input" />
-        <input type="submit" value="Send UserName" class="button"/>
+        <input type="submit" value="Submit UserName" class="button"/>
       </form>
     )
   }
